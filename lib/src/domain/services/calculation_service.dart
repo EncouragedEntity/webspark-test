@@ -1,10 +1,10 @@
 import 'dart:collection';
 
-import '../../domain/models/point_model.dart';
+import '../models/point_model.dart';
 import '../models/result_model.dart';
 import '../models/task_model.dart';
 
-class CalculationRepository {
+class CalculationService {
   Future<ResultModel?> calculateOne(TaskModel task) async {
     List<String> field = task.field;
     Point start = task.start;
