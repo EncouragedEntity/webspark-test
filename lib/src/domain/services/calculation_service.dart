@@ -14,14 +14,14 @@ class CalculationService {
     int cols = field[0].length;
 
     List<Point> directions = [
-      const Point(x: 1, y: 0), // right
-      const Point(x: 0, y: 1), // down
-      const Point(x: -1, y: 0), // left
-      const Point(x: 0, y: -1), // up
-      const Point(x: 1, y: 1), // down-right
-      const Point(x: 1, y: -1), // down-left
-      const Point(x: -1, y: 1), // up-right
-      const Point(x: -1, y: -1), // up-left
+      const Point(x: 1, y: 0),
+      const Point(x: 0, y: 1),
+      const Point(x: -1, y: 0),
+      const Point(x: 0, y: -1),
+      const Point(x: 1, y: 1),
+      const Point(x: 1, y: -1),
+      const Point(x: -1, y: 1),
+      const Point(x: -1, y: -1),
     ];
 
     Queue<List<Point>> queue = Queue();
