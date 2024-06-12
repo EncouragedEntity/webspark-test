@@ -31,6 +31,9 @@ class _ProcessingScreenState extends State<ProcessingScreen> {
           }
         },
         builder: (ctx, state) {
+          if (state is CounterError) {
+            return Center(child: Text(state.message));
+          }
           if (state is CounterInitial) {
             context.read<CounterCubit>().fetchTasks();
             return const Center(

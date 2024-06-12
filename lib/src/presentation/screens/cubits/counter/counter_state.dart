@@ -43,4 +43,10 @@ class CounterCalculated extends CounterCalculating {
   List<Object?> get props => [results, progress];
 }
 
-class CounterError extends CounterState {}
+class CounterError extends CounterState {
+  final String message;
+
+  CounterError({required this.message});
+  @override
+  List<Object?> get props => [message];
+}
